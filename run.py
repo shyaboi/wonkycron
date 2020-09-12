@@ -13,7 +13,6 @@ print(nowTime)
 
 def cronLoop():
     f.write("\nLast cronned at: {timeStamp} | {nowTime}\n")
-    f.close() 
     os.system('node index.js /F');print("ran node cronish")
     time.sleep(300)
     cronLoop()
