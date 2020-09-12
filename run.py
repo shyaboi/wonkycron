@@ -15,7 +15,7 @@ print(nowTime)
 def cronLoop():
     rando = random.randrange(244, 456)
     print(rando)
-    f.write(f"\nLast cronned at: {timeStamp} | {nowTime}\n")
+    f.write(f"\nLast cronned at: {timeStamp} | {nowTime} | RNG: {rando}\n")
     os.system('node index.js /F');print("ran node cronish")
     time.sleep(rando)
     cronLoop()
