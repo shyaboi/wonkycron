@@ -7,7 +7,7 @@ timeStamp = date.today()
 hour = time.strftime("%H")
 minn = time.strftime("%M")
 sec = time.strftime("%S")
-nowTime = f"{hour}:{minn};{sec}"
+nowTime = "{hour}:{minn};{sec}"
 f= open("muhfile.txt","a+")
 print(nowTime)
 
