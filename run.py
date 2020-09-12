@@ -13,7 +13,7 @@ f= open("muhfile.txt","a+")
 print(nowTime)
 
 def cronLoop():
-    rando = random.randrange(244, 456)
+    rando = random.randrange(333, 999)
     print(rando)
     f.write(f"\nLast cronned at: {timeStamp} | {nowTime} | RNG: {rando}\n")
     os.system('node index.js /F');print("ran node cronish")
