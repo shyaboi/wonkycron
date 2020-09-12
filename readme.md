@@ -4,8 +4,12 @@ A cron facsimile to keep sleepy instances alive by scarping them with node, and 
 # How to run
 If you already have Node.js and Python3 installed, you're good...Both node and python are only running core modules, so no dependacies.
 \
+The CountStream() simply searches for the word in the parameters of CountStream('parameters'). 
+\
 If you dont want to ping an old heroku group project of mine, then maybe change the URL in the index.js file
 ```
+var cs = new CountStream('your_variable')
+
 http.get('http://your_url.com', (res)=> {res.pipe(cs)})
 
 cs.on('total',(count)=> {console.log("total matches: " + count)})
