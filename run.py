@@ -7,12 +7,12 @@ timeStamp = date.today()
 hour = time.strftime("%H")
 minn = time.strftime("%M")
 sec = time.strftime("%S")
-nowTime = "{hour}:{minn};{sec}"
+nowTime = f"{hour}:{minn};{sec}"
 f= open("muhfile.txt","a+")
 print(nowTime)
 
 def cronLoop():
-    f.write("\nLast cronned at: {timeStamp} | {nowTime}\n")
+    f.write(f"\nLast cronned at: {timeStamp} | {nowTime}\n")
     os.system('node index.js /F');print("ran node cronish")
     time.sleep(300)
     cronLoop()
