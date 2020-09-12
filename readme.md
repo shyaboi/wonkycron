@@ -1,4 +1,4 @@
-# Wonkycron
+# WonkyCron
 A cron facsimile to keep sleepy instances alive by scarping them with node, and looping the process with python.
 
 # How to run
