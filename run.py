@@ -12,7 +12,7 @@ f= open("muhfile.txt","a+")
 print(nowTime)
 
 def cronLoop():
-    f.write(f"\nLast cronned at: {timeStamp} | {nowTime}\n")
+    f.write("\nLast cronned at: {timeStamp} | {nowTime}\n")
     f.close() 
     os.system('node index.js /F');print("ran node cronish")
     time.sleep(300)
