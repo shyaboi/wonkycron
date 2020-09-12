@@ -22,16 +22,21 @@ python3 run.py
 This will ultimatly keep that free heroku instance alive.
 \
 Might also be a good idea to use a proxy to change the incoming ip address.
-
+# Cronning from the cloud
+I have this running on an Azure instance on Ubuntu Linux. Confirmed working on Windows 10 also.
 # Why not only use Node.js?
 muhlazyness
 \
-Python OS I/O calls are a bit simpler than Node's fs write/read, and I think the Python will run the recurring process with less stress on the system.
+Python OS I/O, Time, Date, and the sleep recurrsion function are a bit simpler to pull off than dealing with Node's fs write/read, I/O stream, then keeping the process running, and the date/time is a bit verbose in vanilla JS.
+\
+I think the Python running the recurring process will put less stress on the host system than JavaScript.
 # Why not only use Python?
 muhlazyness
 \
-I already kinda knew how I was going to get it done this weird way. Maybe I could make 2 seperate versions individually, but...
+I already kinda had a hunch this weird way would do the trick, and it did. Maybe I could make 2 seperate versions individually, but...
 \
 meh, this is more fun.
-# Cronning from the cloud
-I have an instance of this running on an Azure instance on Ubuntu Linux. Confirmed working on Windows 10 also.
+# Bro! just write a C++ addon for Node!
+nah
+## Rust?
+maybe later
